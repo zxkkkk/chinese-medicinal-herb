@@ -1,0 +1,88 @@
+{
+  // 组件自动导入
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      // uni-ui 规则如下配置
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "搜索"
+      }
+    },
+    {
+      "path": "pages/contribute/contribute",
+      "style": {
+        "navigationBarTitleText": "识图"
+      }
+    },
+    {
+      "path": "pages/book/book",
+      "style": {
+        "navigationBarTitleText": "书架"
+      }
+    },
+    {
+      "path": "pages/detail/detail",
+      "style": {
+        "navigationBarTitleText": "集市"
+      }
+    },
+    {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#9c27b0",
+    "backgroundColor": "#F8F8F8"
+  },
+  // 设置 TabBar
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "gray",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "搜索",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabs/sousuo_1.png",
+        "selectedIconPath": "static/tabs/sousuo1.png"
+      },
+      {
+        "text": "识图",
+        "pagePath": "pages/contribute/contribute",
+        "iconPath": "static/tabs/shitu.png",
+        "selectedIconPath": "static/tabs/shitu1.png"
+      },
+      {
+        "text": "书架",
+        "pagePath": "pages/book/book",
+        "iconPath": "static/tabs/wodeshujia.png",
+        "selectedIconPath": "static/tabs/wodeshujia1.png"
+      },
+      {
+        "text": "集市",
+        "pagePath": "pages/detail/detail",
+        "iconPath": "static/tabs/APIjishi.png",
+        "selectedIconPath": "static/tabs/APIjishi1.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "static/tabs/wode.png",
+        "selectedIconPath": "static/tabs/wode1.png"
+      }
+    ]
+  }
+}
